@@ -1,0 +1,10 @@
+name: Norminette
+on: [push, pull_request]
+
+jobs:
+  norminette:
+    name: Norminette
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: alexandregv/norminette-action@v3
