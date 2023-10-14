@@ -12,9 +12,6 @@
 
 void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	int	i;
-
-	i = -1;
-	while (i++ < (length - 1))
-		f(tab[i]);
+	while (length--)
+		f(*(tab++));
 }
